@@ -1,0 +1,22 @@
+# DataViz Explorer - Análise de Doenças Respiratórias
+
+Este projeto tem como objetivo analisar dados sobre doenças respiratórias, incluindo gripe, asma, pneumonia, rinite e COVID-19. Utiliza bibliotecas Python como Pandas, Matplotlib e Seaborn para visualizar informações relevantes sobre casos reportados, custos estimados e receitas de tratamento.
+
+## Estrutura do Projeto
+
+- **data_analysis.py**: Script principal que contém a análise de dados e a geração de gráficos.
+- **README.md**: Este arquivo, que contém informações sobre o projeto.
+- **.gitignore**: Arquivo para ignorar arquivos indesejados no repositório.
+
+## Bibliotecas Utilizadas
+
+- `pandas`: Para manipulação e análise de dados.
+- `matplotlib`: Para criação de gráficos.
+- `seaborn`: Para visualizações estatísticas baseadas em Matplotlib.
+
+## Como Executar o Projeto
+
+1. Certifique-se de ter Python instalado na sua máquina.
+2. Instale as bibliotecas necessárias:
+   ```bash
+   pip install pandas matplotlib seaborn
