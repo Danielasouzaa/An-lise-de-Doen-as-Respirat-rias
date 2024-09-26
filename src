@@ -1,0 +1,37 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Criando um conjunto de dados fictício
+data = {
+    'Doença': ['Gripe', 'Asma', 'Pneumonia', 'Rinite', 'COVID-19'],
+    'Casos Reportados': [15000, 20000, 5000, 30000, 70000],
+    'Custo Estimado (milhões)': [5, 10, 3, 4, 20],
+    'Receita de Tratamento (milhões)': [7, 12, 4, 6, 25]
+}
+
+df = pd.DataFrame(data)
+
+# Visualizando os dados em formato de tabela
+print(df)
+
+# Gráfico de Casos Reportados por Doença
+plt.figure(figsize=(10, 5))
+sns.barplot(x='Doença', y='Casos Reportados', data=df, palette='viridis')
+plt.title('Casos Reportados de Doenças Respiratórias')
+plt.ylabel('Número de Casos')
+plt.xlabel('Doença')
+plt.xticks(rotation=45)
+plt.tight_layout()  # Ajusta o layout para evitar sobreposição
+plt.show()
+
+# Gráfico de Custos e Receitas
+plt.figure(figsize=(10, 5))
+df.set_index('Doença')[['Custo Estimado (milhões)', 'Receita de Tratamento (milhões)']].plot(kind='bar')
+plt.title('Custos e Receitas por Doença Respiratória')
+plt.ylabel('Valor (milhões)')
+plt.xlabel('Doença')
+plt.xticks(rotation=45)
+plt.legend(title='Tipo')
+plt.tight_layout()  # Ajusta o layout para evitar sobreposição
+plt.show()
