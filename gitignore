@@ -1,0 +1,17 @@
+# Ignorar arquivos de cache
+__pycache__/
+*.pyc
+
+# Ignorar ambientes virtuais
+venv/
+env/
+
+# Ignorar arquivos de log
+*.log
+
+# Ignorar arquivos do Jupyter Notebook
+*.ipynb_checkpoints
+
+# Ignorar arquivos de configuração do IDE
+.vscode/
+.idea/
